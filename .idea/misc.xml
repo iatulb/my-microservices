@@ -4,11 +4,13 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/loans/pom.xml" />
         <option value="$PROJECT_DIR$/accounts/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" project-jdk-name="ibm-17" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/compiler_output" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="ibm-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
