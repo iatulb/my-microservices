@@ -156,7 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1752921182032</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="docker file using jib and buildpack">
+      <option name="closed" value="true" />
+      <created>1752931161005</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752931161005</updated>
+    </task>
+    <task id="LOCAL-00007" summary="docker file using jib and buildpack">
+      <option name="closed" value="true" />
+      <created>1752931176407</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752931176407</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
