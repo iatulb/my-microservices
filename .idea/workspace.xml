@@ -59,7 +59,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.LoansApplication">
+  <component name="RunManager" selected="Application.AccountsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eazybytes.accounts.AccountsApplication" />
       <module name="accounts" />
@@ -101,9 +101,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AccountsApplication" />
         <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.CardsApplication" />
-        <item itemvalue="Application.AccountsApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -172,13 +172,30 @@
       <option name="project" value="LOCAL" />
       <updated>1752931176407</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="docker compose file">
+      <option name="closed" value="true" />
+      <created>1752944938071</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1752944938071</updated>
+    </task>
+    <task id="LOCAL-00009" summary="docker compose file">
+      <option name="closed" value="true" />
+      <created>1752944943748</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752944943748</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding loan and cards services" />
     <MESSAGE value="docker file writing" />
     <MESSAGE value="docker file using jib and buildpack" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker file using jib and buildpack" />
+    <MESSAGE value="docker compose file" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker compose file" />
   </component>
 </project>

@@ -81,10 +81,15 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.4.2</version>
                 <configuration>
-                    <image>
-                        <name>iatulb/${project.artifactId}:s4</name>
-                    </image>
+                    <to>
+                        <image>iatulb/${project.artifactId}:s6</image>
+                    </to>
                 </configuration>
             </plugin>
             <plugin>
