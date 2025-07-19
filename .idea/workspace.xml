@@ -188,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752944943748</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="@Value =&gt; reading from application.yml">
+      <option name="closed" value="true" />
+      <created>1752946032583</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1752946032583</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -196,6 +204,7 @@
     <MESSAGE value="docker file writing" />
     <MESSAGE value="docker file using jib and buildpack" />
     <MESSAGE value="docker compose file" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker compose file" />
+    <MESSAGE value="@Value =&gt; reading from application.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Value =&gt; reading from application.yml" />
   </component>
 </project>
