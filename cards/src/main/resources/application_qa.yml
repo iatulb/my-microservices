@@ -7,7 +7,7 @@ build:
   version: "2.0"
 
 
-accounts:
+cards:
   message: "Welcome to Atul cards related local APIs "
   contactDetails:
     name: "Yash - QA"
