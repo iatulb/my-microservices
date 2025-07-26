@@ -1,6 +1,7 @@
 package com.eazybytes.accounts.controller;
 
 import com.eazybytes.accounts.constants.AccountsConstants;
+import com.eazybytes.accounts.dto.AccountContactInfoDto;
 import com.eazybytes.accounts.dto.CustomerDto;
 import com.eazybytes.accounts.dto.ErrorResponseDto;
 import com.eazybytes.accounts.dto.ResponseDto;
@@ -37,6 +38,9 @@ public class AccountsController {
 
     @Autowired
     private Environment environment;
+
+    @Autowired
+    private AccountContactInfoDto accountContactInfoDto;
 
     @GetMapping(value = "/hello")
     public String sayHello(){
@@ -195,8 +199,8 @@ public class AccountsController {
 
 
     @Operation(
-            summary = "Get java info",
-            description = "Get java info"
+            summary = "Get contact info",
+            description = "Get contact info"
     )
     @ApiResponses({
             @ApiResponse(
@@ -212,8 +216,8 @@ public class AccountsController {
             )
     }
     )
-    @GetMapping("/java-version")
-    public String getJavaVersion(){
-        return environment.getProperty("JAVA_HOME");
+    @GetMapping("/contact-info")
+    public AccountContactInfoDto getContactInfo(){
+        return accountContactInfoDto;
     }
 }
