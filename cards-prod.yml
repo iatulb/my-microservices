@@ -4,7 +4,7 @@ build:
 
 
 cards:
-  message: "Welcome to Atul cards related local APIs "
+  message: "Welcome to Atul cards related prod APIs "
   contactDetails:
     name: "Anu - Project Manager"
     email: "anu@test.com"
