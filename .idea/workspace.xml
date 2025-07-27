@@ -65,13 +65,12 @@
       <recent name="D:\work_dsi\Projects\Learning\my-microservices\accounts\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConfigserverApplication">
+  <component name="RunManager" selected="Application.LoansApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="ibm-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.eazybytes.accounts.AccountsApplication" />
       <module name="accounts" />
-      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=qa" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.eazybytes.accounts.*" />
@@ -129,10 +128,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConfigserverApplication" />
         <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.AccountsApplication" />
+        <item itemvalue="Application.ConfigserverApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -184,13 +183,33 @@
       <option name="project" value="LOCAL" />
       <updated>1753612536166</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="encrypting email">
+      <option name="closed" value="true" />
+      <created>1753623763101</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753623763101</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="config server impl" />
     <MESSAGE value="config server impl with file config" />
     <MESSAGE value="config server impl with git config" />
-    <option name="LAST_COMMIT_MESSAGE" value="config server impl with git config" />
+    <MESSAGE value="encrypting email" />
+    <option name="LAST_COMMIT_MESSAGE" value="encrypting email" />
   </component>
 </project>
