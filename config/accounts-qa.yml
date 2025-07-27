@@ -1,0 +1,13 @@
+
+build:
+  version: "2.0"
+
+
+accounts:
+  message: "Welcome to Atul accounts related local APIs "
+  contactDetails:
+    name: "Yash - QA"
+    email: "yash@test.com"
+  onCallSupport:
+    - (555) 555-1254
+    - (555) 523-1375
