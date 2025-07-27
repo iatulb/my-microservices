@@ -65,7 +65,7 @@
       <recent name="D:\work_dsi\Projects\Learning\my-microservices\accounts\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoansApplication">
+  <component name="RunManager" selected="Application.ConfigserverApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="ibm-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -129,10 +129,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConfigserverApplication" />
         <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.AccountsApplication" />
-        <item itemvalue="Application.ConfigserverApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -176,12 +176,21 @@
       <option name="project" value="LOCAL" />
       <updated>1753611830177</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="config server impl with git config">
+      <option name="closed" value="true" />
+      <created>1753612536166</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753612536166</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="config server impl" />
     <MESSAGE value="config server impl with file config" />
-    <option name="LAST_COMMIT_MESSAGE" value="config server impl with file config" />
+    <MESSAGE value="config server impl with git config" />
+    <option name="LAST_COMMIT_MESSAGE" value="config server impl with git config" />
   </component>
 </project>

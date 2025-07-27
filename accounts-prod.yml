@@ -7,7 +7,7 @@ accounts:
   message: "Welcome to Atul accounts related local APIs "
   contactDetails:
     name: "Anu - Project Manager"
-    email: "anu@test.com"
+    email: "{cipher}e9a8ce563b0842b813a507707a56b9c17144f96b3ca48c9aea103d891259c0a8"
   onCallSupport:
     - (555) 555-1234
     - (555) 523-1345

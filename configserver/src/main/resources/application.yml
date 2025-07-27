@@ -18,6 +18,10 @@ spring:
 ##          search-locations: "classpath:/config/"
 #          search-locations: "file:///D://work_dsi//Projects//Learning//my-microservices//config"
 
+encrypt:
+  key: "my-secret-key"
+
+
 server:
   port: 8071
 
