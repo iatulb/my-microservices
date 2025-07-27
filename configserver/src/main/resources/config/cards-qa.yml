@@ -1,14 +1,10 @@
-spring:
-  config:
-    activate:
-      on-profile: "qa"
 
 build:
   version: "2.0"
 
 
-loans:
-  message: "Welcome to Atul loans related local APIs "
+cards:
+  message: "Welcome to Atul cards related local APIs "
   contactDetails:
     name: "Yash - QA"
     email: "yash@test.com"

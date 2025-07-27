@@ -1,14 +1,10 @@
-spring:
-  config:
-    activate:
-      on-profile: "prod"
 
 build:
   version: "1.0"
 
 
-loans:
-  message: "Welcome to Atul loans related local APIs "
+accounts:
+  message: "Welcome to Atul accounts related local APIs "
   contactDetails:
     name: "Anu - Project Manager"
     email: "anu@test.com"
