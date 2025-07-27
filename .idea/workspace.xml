@@ -160,11 +160,28 @@
       <option name="project" value="LOCAL" />
       <updated>1753611483778</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="config server impl with file config">
+      <option name="closed" value="true" />
+      <created>1753611818258</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753611818258</updated>
+    </task>
+    <task id="LOCAL-00004" summary="config server impl with file config">
+      <option name="closed" value="true" />
+      <created>1753611830177</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753611830177</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="config server impl" />
-    <option name="LAST_COMMIT_MESSAGE" value="config server impl" />
+    <MESSAGE value="config server impl with file config" />
+    <option name="LAST_COMMIT_MESSAGE" value="config server impl with file config" />
   </component>
 </project>
