@@ -8,7 +8,8 @@ spring:
     config:
       server:
         native:
-          search-locations: "classpath:/config/"
+#          search-locations: "classpath:/config/"
+          search-locations: "file:///D://work_dsi//Projects//Learning//my-microservices//config"
 
 server:
   port: 8071
