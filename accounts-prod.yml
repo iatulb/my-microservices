@@ -4,7 +4,7 @@ build:
 
 
 accounts:
-  message: "Welcome to Atul accounts related production APIs "
+  message: "Welcome to Atul accounts related prod APIs "
   contactDetails:
     name: "Anu - Project Manager"
     email: "{cipher}e9a8ce563b0842b813a507707a56b9c17144f96b3ca48c9aea103d891259c0a8"
