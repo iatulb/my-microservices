@@ -4,7 +4,7 @@ build:
 
 
 cards:
-  message: "Welcome to Atul cards related webhook APIs "
+  message: "Welcome to Atul cards related webhooks APIs "
   contactDetails:
     name: "Anu - Project Manager"
     email: "anu@test.com"
