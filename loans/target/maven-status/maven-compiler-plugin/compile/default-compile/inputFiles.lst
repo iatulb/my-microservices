@@ -2,6 +2,7 @@ D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\java\com\eazybytes
 D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\java\com\eazybytes\loans\constants\LoansConstants.java
 D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\java\com\eazybytes\loans\controller\LoansController.java
 D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\java\com\eazybytes\loans\dto\ErrorResponseDto.java
+D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\java\com\eazybytes\loans\dto\LoansContactInfoDto.java
 D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\java\com\eazybytes\loans\dto\LoansDto.java
 D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\java\com\eazybytes\loans\dto\ResponseDto.java
 D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\java\com\eazybytes\loans\entity\BaseEntity.java

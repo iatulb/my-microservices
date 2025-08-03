@@ -49,8 +49,9 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/work_dsi/Projects/Learning/my-microservices/loans/src/main/resources",
+    "last_opened_file_path": "D:/work_dsi/Projects/Learning/my-microservices/docker-compose/qa",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -65,12 +66,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work_dsi\Projects\Learning\my-microservices\docker-compose\qa" />
+      <recent name="D:\work_dsi\Projects\Learning\my-microservices\docker-compose\prod" />
+      <recent name="D:\work_dsi\Projects\Learning\my-microservices\docker-compose\default" />
       <recent name="D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\resources" />
       <recent name="D:\work_dsi\Projects\Learning\my-microservices\cards\src\main\resources" />
-      <recent name="D:\work_dsi\Projects\Learning\my-microservices\accounts\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AccountsApplication">
+  <component name="RunManager" selected="Application.ConfigserverApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="ibm-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -133,9 +136,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConfigserverApplication" />
         <item itemvalue="Application.AccountsApplication" />
         <item itemvalue="Application.CardsApplication" />
-        <item itemvalue="Application.ConfigserverApplication" />
         <item itemvalue="Application.LoansApplication" />
       </list>
     </recent_temporary>
@@ -212,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753632578168</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cloud config with monitor">
+      <option name="closed" value="true" />
+      <created>1754203345006</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1754203345006</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +244,7 @@
     <MESSAGE value="encrypting email" />
     <MESSAGE value="refresh config without restarting" />
     <MESSAGE value="refresh config without restarting using rabbitmq" />
-    <option name="LAST_COMMIT_MESSAGE" value="refresh config without restarting using rabbitmq" />
+    <MESSAGE value="cloud config with monitor" />
+    <option name="LAST_COMMIT_MESSAGE" value="cloud config with monitor" />
   </component>
 </project>
