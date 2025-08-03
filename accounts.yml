@@ -28,7 +28,7 @@ build:
 
 
 accounts:
-  message: "Welcome to Atul accounts related local APIs "
+  message: "Welcome to Atul accounts related docker APIs "
   contactDetails:
     name: "Atul - Developer"
     email: "atul@test.com"
