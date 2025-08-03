@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9daefe1f-4e51-4851-8430-dd772b5ace61" name="Changes" comment="" />
+    <list default="true" id="9daefe1f-4e51-4851-8430-dd772b5ace61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,26 +40,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/work_dsi/Projects/Learning/my-microservices/loans/src/main/resources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccountsApplication.executor": "Run",
+    "Application.CardsApplication.executor": "Run",
+    "Application.ConfigserverApplication.executor": "Run",
+    "Application.LoansApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/work_dsi/Projects/Learning/my-microservices/loans/src/main/resources",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work_dsi\Projects\Learning\my-microservices\loans\src\main\resources" />
@@ -65,7 +70,7 @@
       <recent name="D:\work_dsi\Projects\Learning\my-microservices\accounts\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CardsApplication">
+  <component name="RunManager" selected="Application.AccountsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="ibm-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -128,10 +133,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CardsApplication" />
-        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.AccountsApplication" />
+        <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.ConfigserverApplication" />
+        <item itemvalue="Application.LoansApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753625878037</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refresh config without restarting using rabbitmq">
+      <option name="closed" value="true" />
+      <created>1753632578168</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753632578168</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +232,7 @@
     <MESSAGE value="config server impl with git config" />
     <MESSAGE value="encrypting email" />
     <MESSAGE value="refresh config without restarting" />
-    <option name="LAST_COMMIT_MESSAGE" value="refresh config without restarting" />
+    <MESSAGE value="refresh config without restarting using rabbitmq" />
+    <option name="LAST_COMMIT_MESSAGE" value="refresh config without restarting using rabbitmq" />
   </component>
 </project>
