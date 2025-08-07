@@ -85,8 +85,8 @@ services:
     extends:
       file: common-config.yml
       service: microservice-configserver-config
-#
-#
+
+
   loansdb:
     container_name: loansdb
     ports:
@@ -100,8 +100,8 @@ services:
     extends:
       file: common-config.yml
       service: microservice-db-config
-#
-#
+
+
   loans:
     image: "iatulb/loans:s7"
     container_name: loans-ms
