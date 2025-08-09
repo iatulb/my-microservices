@@ -1,30 +1,9 @@
 services:
-  rabbitmq:
-    image: "rabbitmq:4-management"
-    hostname: rabbitmq
-    ports:
-      - "5672:5672"
-      - "15672:15672"
-    healthcheck:
-      test: rabbitmq-diagnostics check_port_connectivity
-      interval: 10s
-      timeout: 5s
-      retries: 10
-      start_period: 10s
-    extends:
-      file: common-config.yml
-      service: network-deploy-service
-
-
-
   configserver:
-    image: "iatulb/configserver:s6"
+    image: "iatulb/configserver:s7"
     container_name: configserver-ms
     ports:
       - "8071:8071"
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
     healthcheck:
       test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep  'UP' || exit 1"
       interval: 10s
@@ -35,41 +14,118 @@ services:
       file: common-config.yml
       service: microservice-base-config
 
+
+  accountsdb:
+    container_name: accountsdb
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: accountsdb
+    extends:
+      file: common-config.yml
+      service: microservice-db-config
+
   accounts:
-    image: "iatulb/accounts:s6"
+    image: "iatulb/accounts:s7"
     container_name: accounts-ms
     ports:
       - "8080:8080"
-    extends:
-      file: common-config.yml
-      service: microservice-configserver-config
     environment:
       SPRING_APPLICATION_NAME: "accounts"
-
-
-
-  loans:
-    image: "iatulb/loans:s6"
-    container_name: loans-ms
-    ports:
-      - "8090:8090"
+      SPRING_DATASOURCE_URL: "jdbc:mysql://accountsdb:3306/accountsdb"
+    depends_on:
+      accountsdb:
+        condition: service_healthy
+      configserver:
+        condition: service_healthy
+    healthcheck:
+      test: "curl --fail --silent localhost:8080/actuator/health | grep  'UP' || exit 1"
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
     extends:
       file: common-config.yml
       service: microservice-configserver-config
+
+
+  cardsdb:
+    container_name: cardsdb
+    ports:
+      - 3307:3306
     environment:
-      SPRING_APPLICATION_NAME: "loans"
+      MYSQL_DATABASE: cardsdb
+    depends_on:
+      accounts:
+        condition: service_healthy
+    extends:
+      file: common-config.yml
+      service: microservice-db-config
 
 
   cards:
-    image: "iatulb/cards:s6"
+    image: "iatulb/cards:s7"
     container_name: cards-ms
     ports:
       - "9000:9000"
+    environment:
+      SPRING_APPLICATION_NAME: "cards"
+      SPRING_DATASOURCE_URL: "jdbc:mysql://cardsdb:3306/cardsdb"
+    depends_on:
+      cardsdb:
+        condition: service_healthy
+      configserver:
+        condition: service_healthy
+    healthcheck:
+      test: "curl --fail --silent localhost:9000/actuator/health | grep  'UP' || exit 1"
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
     extends:
       file: common-config.yml
       service: microservice-configserver-config
+
+
+  loansdb:
+    container_name: loansdb
+    ports:
+      - 3308:3306
     environment:
-      SPRING_APPLICATION_NAME: "cards"
+      MYSQL_DATABASE: loansdb
+    depends_on:
+      cards:
+        condition:
+          service_healthy
+    extends:
+      file: common-config.yml
+      service: microservice-db-config
+
+
+  loans:
+    image: "iatulb/loans:s7"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    environment:
+      SPRING_APPLICATION_NAME: "loans"
+      SPRING_DATASOURCE_URL: "jdbc:mysql://loansdb:3306/loansdb"
+    depends_on:
+      loansdb:
+        condition: service_healthy
+      configserver:
+        condition: service_healthy
+    healthcheck:
+      test: "curl --fail --silent localhost:8090/actuator/health | grep  'UP' || exit 1"
+      interval: 20s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    extends:
+      file: common-config.yml
+      service: microservice-configserver-config
+
+
 
 
 networks:
