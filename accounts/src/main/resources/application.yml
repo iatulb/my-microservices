@@ -32,10 +32,35 @@ spring:
     import: "optional:configserver:http://localhost:8071"
 
 
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "accounts"
+    description: "This is the accounts microservice"
+    version: "1.0.0"
+
+endpoints:
+  shutdown:
+    enabled: true
+
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
 
 
