@@ -10,13 +10,21 @@ spring:
   profiles:
     active: "prod"
   datasource:
-    url: jdbc:mysql://localhost:3308/loansdb
+#    url: jdbc:mysql://localhost:3308/loansdb
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
     username: root
     password: root
+  h2:
+    console:
+      enabled: true
   sql:
     init:
       mode: always
   jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
     show-sql: true
 
   config:
@@ -24,8 +32,34 @@ spring:
 
 
 
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "loans"
+    description: "This is the loans microservice"
+    version: "1.0.0"
+
+endpoints:
+  shutdown:
+    enabled: true
+
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
