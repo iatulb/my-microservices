@@ -10,13 +10,22 @@ spring:
   profiles:
     active: "prod"
   datasource:
-    url: jdbc:mysql://localhost:3306/accountsdb
-    username: root
-    password: root
-  sql:
-    init:
-      mode: always
+#    url: jdbc:mysql://localhost:3306/accountsdb
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+#  sql:
+#    init:
+#      mode: always
   jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto:
+        update
     show-sql: true
 
   config:
