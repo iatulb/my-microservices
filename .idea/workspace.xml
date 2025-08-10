@@ -87,7 +87,7 @@
       <recent name="com.eazybytes.accounts.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CardsApplication">
+  <component name="RunManager" selected="Application.AccountsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="ibm-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -164,11 +164,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CardsApplication" />
-        <item itemvalue="Application.EurekaserverApplication" />
-        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.AccountsApplication" />
+        <item itemvalue="Application.EurekaserverApplication" />
         <item itemvalue="Application.ConfigserverApplication" />
+        <item itemvalue="Application.CardsApplication" />
+        <item itemvalue="Application.LoansApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -348,7 +348,23 @@
       <option name="project" value="LOCAL" />
       <updated>1754760691359</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="eureka server for all 3">
+      <option name="closed" value="true" />
+      <created>1754829869759</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1754829869759</updated>
+    </task>
+    <task id="LOCAL-00023" summary="eureka server for all 3">
+      <option name="closed" value="true" />
+      <created>1754829876062</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1754829876062</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
