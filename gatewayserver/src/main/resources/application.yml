@@ -1,0 +1,48 @@
+#spring.application.name=accounts
+
+server:
+  port: 8072
+
+
+spring:
+  application:
+    name: "gatewayserver"
+  config:
+    import: "optional:configserver:http://localhost:8071"
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+
+
+
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "gatewayserver"
+    description: "This is the gateway server microservice"
+    version: "1.0.0"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      access: unrestricted
+  info:
+    env:
+      enabled: true
+
+
