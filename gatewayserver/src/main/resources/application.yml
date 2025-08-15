@@ -49,3 +49,8 @@ management:
       enabled: true
 
 
+logging:
+  level:
+    com:
+      iatulb:
+        gatewayserver: DEBUG

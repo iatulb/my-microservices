@@ -10,13 +10,11 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.Pattern;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/api/", produces = "application/json")
@@ -25,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
         description = "REST APIs in EazyBank to fetch customer details"
 )
 @Validated
+@Slf4j
 public class CustomerController {
 
     @Autowired
@@ -49,11 +48,14 @@ public class CustomerController {
     }
     )
     @GetMapping(path = "/fetchCustomerDetails")
-    public ResponseEntity<CustomerDetailsDto> getCustomerDetails(@RequestParam
+    public ResponseEntity<CustomerDetailsDto> getCustomerDetails(
+            @RequestHeader("iatulb-correlation-id") String correlationId,
+            @RequestParam
                                                                  @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
                                                                  String mobileNumber) {
 
-        CustomerDetailsDto customerDetailsDto = iCustomerService.getCustomerDetailsByMobileNumber(mobileNumber);
+        log.debug("correlation id found in customer: {}", correlationId);
+        CustomerDetailsDto customerDetailsDto = iCustomerService.getCustomerDetailsByMobileNumber(mobileNumber, correlationId);
         return ResponseEntity.ok(customerDetailsDto);
     }
 }

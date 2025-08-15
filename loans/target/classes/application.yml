@@ -63,3 +63,9 @@ management:
   info:
     env:
       enabled: true
+
+logging:
+  level:
+    com:
+      eazybytes:
+        loans: DEBUG
