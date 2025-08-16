@@ -159,10 +159,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ConfigserverApplication" />
-      <item itemvalue="Application.EurekaserverApplication" />
       <item itemvalue="Application.AccountsApplication" />
       <item itemvalue="Application.CardsApplication" />
+      <item itemvalue="Application.ConfigserverApplication" />
+      <item itemvalue="Application.EurekaserverApplication" />
       <item itemvalue="Application.LoansApplication" />
     </list>
     <recent_temporary>
@@ -407,7 +407,39 @@
       <option name="project" value="LOCAL" />
       <updated>1755242104854</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="request filter in gateway server">
+      <option name="closed" value="true" />
+      <created>1755267376537</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1755267376537</updated>
+    </task>
+    <task id="LOCAL-00030" summary="request filter in gateway server">
+      <option name="closed" value="true" />
+      <created>1755267382528</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1755267382528</updated>
+    </task>
+    <task id="LOCAL-00031" summary="request filter in gateway server">
+      <option name="closed" value="true" />
+      <created>1755267415902</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1755267415902</updated>
+    </task>
+    <task id="LOCAL-00032" summary="request filter in gateway server">
+      <option name="closed" value="true" />
+      <created>1755267420249</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1755267420249</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,6 +466,7 @@
     <MESSAGE value="eureka server properties" />
     <MESSAGE value="eureka server for all 3" />
     <MESSAGE value="gateway server" />
-    <option name="LAST_COMMIT_MESSAGE" value="gateway server" />
+    <MESSAGE value="request filter in gateway server" />
+    <option name="LAST_COMMIT_MESSAGE" value="request filter in gateway server" />
   </component>
 </project>

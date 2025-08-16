@@ -1,6 +1,6 @@
 services:
   configserver:
-    image: "iatulb/configserver:s8"
+    image: "iatulb/configserver:s9"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -15,7 +15,7 @@ services:
       service: microservice-base-config
 
   eurekaserver:
-    image: "iatulb/eurekaserver:s8"
+    image: "iatulb/eurekaserver:s9"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -46,7 +46,7 @@ services:
 #      service: microservice-db-config
 
   accounts:
-    image: "iatulb/accounts:s8"
+    image: "iatulb/accounts:s9"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -97,10 +97,16 @@ services:
 
 
   cards:
-    image: "iatulb/cards:s8"
+    image: "iatulb/cards:s9"
     container_name: cards-ms
     ports:
       - "9000:9000"
+    healthcheck:
+      test: "curl --fail --silent localhost:9000/actuator/health | grep  'UP' || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
     depends_on:
       configserver:
         condition: service_healthy
@@ -142,10 +148,16 @@ services:
 
 
   loans:
-    image: "iatulb/loans:s8"
+    image: "iatulb/loans:s9"
     container_name: loans-ms
     ports:
       - "8090:8090"
+    healthcheck:
+      test: "curl --fail --silent localhost:8090/actuator/health | grep  'UP' || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
     depends_on:
       configserver:
         condition: service_healthy
@@ -170,6 +182,38 @@ services:
       file: common-config.yml
       service: microservice-eureka-config
 
+  gatewayserver:
+    image: "iatulb/gatewayserver:s9"
+    container_name: gatewayserver-ms
+    ports:
+      - "8072:8072"
+    depends_on:
+      accounts:
+        condition: service_healthy
+      cards:
+        condition: service_healthy
+      loans:
+        condition: service_healthy
+    environment:
+      SPRING_APPLICATION_NAME: "gatewayserver"
+    #      SPRING_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+    #      SPRING_DATASOURCE_URL: "jdbc:mysql://loansdb:3306/loansdb"
+    #    depends_on:
+    ##      loansdb:
+    ##        condition: service_healthy
+    #      configserver:
+    #        condition: service_healthy
+    #    healthcheck:
+    #      test: "curl --fail --silent localhost:8090/actuator/health | grep  'UP' || exit 1"
+    #      interval: 10s
+    #      timeout: 5s
+    #      retries: 10
+    #      start_period: 20s
+    extends:
+      file: common-config.yml
+      service: microservice-eureka-config
+
+# default/docker-compose.yml
 
 
 

@@ -17,11 +17,11 @@ spring:
 #        native:
 ##          search-locations: "classpath:/config/"
 #          search-locations: "file:///D://work_dsi//Projects//Learning//my-microservices//config"
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: "guest"
-    password: "guest"
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: "guest"
+#    password: "guest"
 
 encrypt:
   key: "my-secret-key"
