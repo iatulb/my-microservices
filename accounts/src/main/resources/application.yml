@@ -27,9 +27,13 @@ spring:
       ddl-auto:
         update
     show-sql: true
-
   config:
     import: "optional:configserver:http://localhost:8071"
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+
 
 
 eureka:
@@ -77,3 +81,12 @@ logging:
     com:
       eazybytes:
         accounts: DEBUG
+
+
+resilience4j.circuitBreaker:
+  configs:
+    default:
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000

@@ -218,6 +218,7 @@ public class AccountsController {
     )
     @GetMapping("/contact-info")
     public AccountContactInfoDto getContactInfo(){
+
         return accountContactInfoDto;
     }
 }
