@@ -54,12 +54,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.AccountsApplication.executor": "Run",
-    "Application.CardsApplication.executor": "Run",
+    "Application.AccountsApplication.executor": "Debug",
+    "Application.CardsApplication.executor": "Debug",
     "Application.ConfigserverApplication.executor": "Run",
     "Application.EurekaserverApplication.executor": "Run",
-    "Application.GatewayserverApplication.executor": "Run",
-    "Application.LoansApplication.executor": "Run",
+    "Application.GatewayserverApplication.executor": "Debug",
+    "Application.LoansApplication.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -159,18 +159,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.EurekaserverApplication" />
       <item itemvalue="Application.LoansApplication" />
       <item itemvalue="Application.GatewayserverApplication" />
       <item itemvalue="Application.AccountsApplication" />
       <item itemvalue="Application.CardsApplication" />
-      <item itemvalue="Application.EurekaserverApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GatewayserverApplication" />
         <item itemvalue="Application.AccountsApplication" />
-        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.CardsApplication" />
+        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
       </list>
     </recent_temporary>
@@ -471,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755755993188</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="retry pattern">
+      <option name="closed" value="true" />
+      <created>1755758379276</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1755758379276</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -509,7 +517,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java</url>
-          <line>232</line>
+          <line>234</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

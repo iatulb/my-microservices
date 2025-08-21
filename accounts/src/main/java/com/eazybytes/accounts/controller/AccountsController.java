@@ -24,6 +24,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.TimeoutException;
+
 @Slf4j
 @RestController
 @RequestMapping(path = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -197,10 +199,10 @@ public class AccountsController {
     )
     @Retry(name = "getBuildInfo", fallbackMethod = "getBuildInfoFallback")
     @GetMapping("/build-info")
-    public String getBuildInfo(){
+    public String getBuildInfo() throws TimeoutException {
         log.info("getBuildInfo invoked");
-        throw new NullPointerException();
-//        return buildVersion;
+//        throw new TimeoutException();
+        return buildVersion;
     }
 
     public String getBuildInfoFallback(Throwable throwable){
