@@ -17,9 +17,9 @@ spring:
             locator:
               enabled: false
               lowerCaseServiceId: true
-      httpclient:
-        connect-timeout: 1000
-        response-timeout: 5s
+          httpclient:
+            connect-timeout: 1000
+            response-timeout: 2s
 
 
 

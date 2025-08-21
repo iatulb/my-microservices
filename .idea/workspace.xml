@@ -59,7 +59,7 @@
     "Application.ConfigserverApplication.executor": "Run",
     "Application.EurekaserverApplication.executor": "Run",
     "Application.GatewayserverApplication.executor": "Run",
-    "Application.LoansApplication.executor": "Run",
+    "Application.LoansApplication.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -92,7 +92,7 @@
       <recent name="com.eazybytes.accounts.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoansApplication">
+  <component name="RunManager" selected="Application.GatewayserverApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eazybytes.accounts.AccountsApplication" />
       <module name="accounts" />
@@ -167,9 +167,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GatewayserverApplication" />
         <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.AccountsApplication" />
-        <item itemvalue="Application.GatewayserverApplication" />
         <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
       </list>
@@ -447,7 +447,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755344522239</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="circuit breaker pattern">
+      <option name="closed" value="true" />
+      <created>1755754908518</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1755754908518</updated>
+    </task>
+    <task id="LOCAL-00035" summary="circuit breaker pattern">
+      <option name="closed" value="true" />
+      <created>1755754915005</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1755754915005</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -476,7 +492,8 @@
     <MESSAGE value="gateway server" />
     <MESSAGE value="request filter in gateway server" />
     <MESSAGE value="docker compose of gateway server" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker compose of gateway server" />
+    <MESSAGE value="circuit breaker pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="circuit breaker pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -485,6 +502,11 @@
           <url>file://$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java</url>
           <line>221</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/loans/src/main/java/com/eazybytes/loans/controller/LoansController.java</url>
+          <line>225</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
