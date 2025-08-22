@@ -52,33 +52,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AccountsApplication.executor": "Debug",
-    "Application.CardsApplication.executor": "Debug",
-    "Application.ConfigserverApplication.executor": "Run",
-    "Application.EurekaserverApplication.executor": "Run",
-    "Application.GatewayserverApplication.executor": "Debug",
-    "Application.LoansApplication.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/work_dsi/Projects/Learning/my-microservices/docker-compose/qa",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AccountsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CardsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GatewayserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LoansApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/work_dsi/Projects/Learning/my-microservices/docker-compose/qa&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work_dsi\Projects\Learning\my-microservices\docker-compose\qa" />
@@ -92,7 +92,7 @@
       <recent name="com.eazybytes.accounts.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GatewayserverApplication">
+  <component name="RunManager" selected="Application.AccountsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eazybytes.accounts.AccountsApplication" />
       <module name="accounts" />
@@ -112,6 +112,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.eazybytes.cards.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eazybytes.configserver.ConfigserverApplication" />
+      <module name="configserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eazybytes.configserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,22 +158,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoansApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.eazybytes.loans.LoansApplication" />
-      <module name="loans" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.eazybytes.loans.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.ConfigserverApplication" />
       <item itemvalue="Application.EurekaserverApplication" />
-      <item itemvalue="Application.LoansApplication" />
       <item itemvalue="Application.GatewayserverApplication" />
       <item itemvalue="Application.AccountsApplication" />
       <item itemvalue="Application.CardsApplication" />
@@ -170,8 +170,8 @@
         <item itemvalue="Application.GatewayserverApplication" />
         <item itemvalue="Application.AccountsApplication" />
         <item itemvalue="Application.CardsApplication" />
-        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
+        <item itemvalue="Application.ConfigserverApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -479,7 +479,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755758379276</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="retry pattern">
+      <option name="closed" value="true" />
+      <created>1755795130422</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1755795130422</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -511,21 +519,5 @@
     <MESSAGE value="circuit breaker pattern" />
     <MESSAGE value="retry pattern" />
     <option name="LAST_COMMIT_MESSAGE" value="retry pattern" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java</url>
-          <line>234</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/loans/src/main/java/com/eazybytes/loans/controller/LoansController.java</url>
-          <line>223</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

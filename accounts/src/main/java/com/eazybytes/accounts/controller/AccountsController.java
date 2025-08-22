@@ -6,6 +6,7 @@ import com.eazybytes.accounts.dto.CustomerDto;
 import com.eazybytes.accounts.dto.ErrorResponseDto;
 import com.eazybytes.accounts.dto.ResponseDto;
 import com.eazybytes.accounts.service.IAccountsService;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import io.github.resilience4j.retry.annotation.Retry;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -229,9 +230,15 @@ public class AccountsController {
             )
     }
     )
+    @RateLimiter(name="contact-info-rate-limiter", fallbackMethod = "getContactInfoFallback")
     @GetMapping("/contact-info")
     public AccountContactInfoDto getContactInfo(){
 
+        return accountContactInfoDto;
+    }
+
+    public AccountContactInfoDto getContactInfoFallback(Throwable throwable) {
+        accountContactInfoDto.setMessage("Fallback");
         return accountContactInfoDto;
     }
 }
