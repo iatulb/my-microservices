@@ -134,7 +134,7 @@
 				<version>3.4.2</version>
 				<configuration>
 					<to>
-						<image>iatulb/${project.artifactId}:s10</image>
+						<image>iatulb/${project.artifactId}:s11</image>
 					</to>
 				</configuration>
 			</plugin>
