@@ -543,7 +543,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755947887189</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="micrometer changes for prometheus">
+      <option name="closed" value="true" />
+      <created>1755953345245</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1755953345245</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,6 +584,7 @@
     <MESSAGE value="retry pattern" />
     <MESSAGE value="rate limiter pattern" />
     <MESSAGE value="promtail log aggregator" />
-    <option name="LAST_COMMIT_MESSAGE" value="promtail log aggregator" />
+    <MESSAGE value="micrometer changes for prometheus" />
+    <option name="LAST_COMMIT_MESSAGE" value="micrometer changes for prometheus" />
   </component>
 </project>
