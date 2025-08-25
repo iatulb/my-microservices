@@ -95,10 +95,11 @@ public class CardsController {
     public ResponseEntity<CardsDto> fetchCardDetails(
             @RequestHeader("iatulb-correlation-id") String correlationId,
             @RequestParam
-                                                               @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
-                                                               String mobileNumber) {
-        log.debug("correlation id found in cards: {}", correlationId);
+           @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
+           String mobileNumber) {
+        log.debug("fetchCardDetails start");
         CardsDto cardsDto = iCardsService.fetchCard(mobileNumber);
+        log.debug("fetchCardDetails end");
         return ResponseEntity.status(HttpStatus.OK).body(cardsDto);
     }
 

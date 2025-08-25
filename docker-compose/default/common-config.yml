@@ -19,6 +19,12 @@ services:
   microservice-base-config:
     extends:
       service: network-deploy-service
+    environment:
+      JAVA_TOOL_OPTIONS: "-javaagent:/app/libs/opentelemetry-javaagent-2.19.0.jar"
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://tempo:4318
+      OTEL_METRICS_EXPORTER: none
+      OTEL_LOGS_EXPORTER: none
+
 #    deploy:
 #      resources:
 #        limits:
