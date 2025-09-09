@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9daefe1f-4e51-4851-8430-dd772b5ace61" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9daefe1f-4e51-4851-8430-dd772b5ace61" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,17 +165,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.EurekaserverApplication" />
-      <item itemvalue="Application.LoansApplication" />
-      <item itemvalue="Application.GatewayserverApplication" />
       <item itemvalue="Application.AccountsApplication" />
       <item itemvalue="Application.CardsApplication" />
+      <item itemvalue="Application.EurekaserverApplication" />
+      <item itemvalue="Application.GatewayserverApplication" />
+      <item itemvalue="Application.LoansApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GatewayserverApplication" />
-        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.CardsApplication" />
+        <item itemvalue="Application.LoansApplication" />
         <item itemvalue="Application.AccountsApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
       </list>
@@ -559,7 +557,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756039883151</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="distributed tracing">
+      <option name="closed" value="true" />
+      <created>1756141173996</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1756141173996</updated>
+    </task>
+    <task id="LOCAL-00048" summary="distributed tracing">
+      <option name="closed" value="true" />
+      <created>1756141185223</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1756141185223</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -593,6 +607,7 @@
     <MESSAGE value="rate limiter pattern" />
     <MESSAGE value="promtail log aggregator" />
     <MESSAGE value="micrometer changes for prometheus" />
-    <option name="LAST_COMMIT_MESSAGE" value="micrometer changes for prometheus" />
+    <MESSAGE value="distributed tracing" />
+    <option name="LAST_COMMIT_MESSAGE" value="distributed tracing" />
   </component>
 </project>
