@@ -174,8 +174,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GatewayserverApplication" />
-        <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.LoansApplication" />
+        <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.AccountsApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
       </list>
@@ -188,14 +188,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753609315918</updated>
-    </task>
-    <task id="LOCAL-00001" summary="config server impl">
-      <option name="closed" value="true" />
-      <created>1753611421536</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1753611421537</updated>
     </task>
     <task id="LOCAL-00002" summary="config server impl">
       <option name="closed" value="true" />
@@ -573,7 +565,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756141185223</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="authentication using oauth using keyclock">
+      <option name="closed" value="true" />
+      <created>1757435686373</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1757435686373</updated>
+    </task>
+    <task id="LOCAL-00050" summary="authentication using oauth using keyclock">
+      <option name="closed" value="true" />
+      <created>1757435718372</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1757435718372</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,6 +616,7 @@
     <MESSAGE value="promtail log aggregator" />
     <MESSAGE value="micrometer changes for prometheus" />
     <MESSAGE value="distributed tracing" />
-    <option name="LAST_COMMIT_MESSAGE" value="distributed tracing" />
+    <MESSAGE value="authentication using oauth using keyclock" />
+    <option name="LAST_COMMIT_MESSAGE" value="authentication using oauth using keyclock" />
   </component>
 </project>
