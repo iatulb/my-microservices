@@ -189,14 +189,6 @@
       <option name="presentableId" value="Default" />
       <updated>1753609315918</updated>
     </task>
-    <task id="LOCAL-00004" summary="config server impl with file config">
-      <option name="closed" value="true" />
-      <created>1753611830177</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1753611830177</updated>
-    </task>
     <task id="LOCAL-00005" summary="config server impl with git config">
       <option name="closed" value="true" />
       <created>1753612536166</created>
@@ -581,7 +573,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757585452365</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="authorization using oauth using keyclock">
+      <option name="closed" value="true" />
+      <created>1757651124916</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1757651124916</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
