@@ -189,22 +189,6 @@
       <option name="presentableId" value="Default" />
       <updated>1753609315918</updated>
     </task>
-    <task id="LOCAL-00002" summary="config server impl">
-      <option name="closed" value="true" />
-      <created>1753611483778</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1753611483778</updated>
-    </task>
-    <task id="LOCAL-00003" summary="config server impl with file config">
-      <option name="closed" value="true" />
-      <created>1753611818258</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1753611818258</updated>
-    </task>
     <task id="LOCAL-00004" summary="config server impl with file config">
       <option name="closed" value="true" />
       <created>1753611830177</created>
@@ -581,7 +565,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757435718372</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="authorization using oauth using keyclock">
+      <option name="closed" value="true" />
+      <created>1757585447683</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1757585447684</updated>
+    </task>
+    <task id="LOCAL-00052" summary="authorization using oauth using keyclock">
+      <option name="closed" value="true" />
+      <created>1757585452365</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1757585452365</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -617,6 +617,7 @@
     <MESSAGE value="micrometer changes for prometheus" />
     <MESSAGE value="distributed tracing" />
     <MESSAGE value="authentication using oauth using keyclock" />
-    <option name="LAST_COMMIT_MESSAGE" value="authentication using oauth using keyclock" />
+    <MESSAGE value="authorization using oauth using keyclock" />
+    <option name="LAST_COMMIT_MESSAGE" value="authorization using oauth using keyclock" />
   </component>
 </project>

@@ -1,4 +1,18 @@
 services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.3.3
+    container_name: keycloak
+    ports:
+      - "7080:8080"
+    environment:
+      KEYCLOAK_ADMIN: "admin"
+      KEYCLOAK_ADMIN_PASSWORD: "admin"
+    command: "start-dev"
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
+
+
   read:
     image: grafana/loki:latest
     command: "-config.file=/etc/loki/config.yaml -target=read"
@@ -228,7 +242,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "iatulb/configserver:s11"
+    image: "iatulb/configserver:s12"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -237,10 +251,10 @@ services:
         condition: service_healthy
     healthcheck:
       test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep  'UP' || exit 1"
-      interval: 10s
+      interval: 20s
       timeout: 5s
       retries: 10
-      start_period: 10s
+      start_period: 20s
     extends:
       file: common-config.yml
       service: microservice-base-config
@@ -248,7 +262,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "iatulb/eurekaserver:s11"
+    image: "iatulb/eurekaserver:s12"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -260,10 +274,10 @@ services:
         condition: service_healthy
     healthcheck:
       test: "curl --fail --silent localhost:8070/actuator/health | grep  'UP' || exit 1"
-      interval: 10s
+      interval: 20s
       timeout: 5s
       retries: 10
-      start_period: 10s
+      start_period: 20s
     environment:
       SPRING_APPLICATION_NAME: "eurekaserver"
       OTEL_SERVICE_NAME: "eurekaserver"
@@ -280,10 +294,10 @@ services:
 #      service: microservice-db-config
 
   accounts:
-    image: "iatulb/accounts:s11"
+    image: "iatulb/accounts:s12"
     container_name: accounts-ms
-    ports:
-      - "8080:8080"
+#    ports:
+#      - "8080:8080"
     depends_on:
       configserver:
         condition: service_healthy
@@ -332,10 +346,10 @@ services:
 
 
   cards:
-    image: "iatulb/cards:s11"
+    image: "iatulb/cards:s12"
     container_name: cards-ms
-    ports:
-      - "9000:9000"
+#    ports:
+#      - "9000:9000"
     healthcheck:
       test: "curl --fail --silent localhost:9000/actuator/health | grep  'UP' || exit 1"
       interval: 20s
@@ -384,10 +398,10 @@ services:
 
 
   loans:
-    image: "iatulb/loans:s11"
+    image: "iatulb/loans:s12"
     container_name: loans-ms
-    ports:
-      - "8090:8090"
+#    ports:
+#      - "8090:8090"
     healthcheck:
       test: "curl --fail --silent localhost:8090/actuator/health | grep  'UP' || exit 1"
       interval: 20s
@@ -420,7 +434,7 @@ services:
       service: microservice-eureka-config
 
   gatewayserver:
-    image: "iatulb/gatewayserver:s11"
+    image: "iatulb/gatewayserver:s12"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
@@ -440,6 +454,7 @@ services:
       SPRING_DATA_REDIS_PORT: 6379
       SPRING_DATA_REDIS_TIMEOUT: 1s
       OTEL_SERVICE_NAME: "gatewayserver"
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI: "http://keycloak:8080/realms/master/protocol/openid-connect/certs"
     #      SPRING_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     #      SPRING_DATASOURCE_URL: "jdbc:mysql://loansdb:3306/loansdb"
     #    depends_on:
