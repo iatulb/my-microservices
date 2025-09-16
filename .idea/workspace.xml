@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -58,6 +59,7 @@
     &quot;Application.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.GatewayserverApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MessageApplication.executor&quot;: &quot;Run&quot;,
     &quot;Docker.default.configserver: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.default.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
@@ -106,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.eazybytes.cards.CardsApplication" />
-      <module name="cards" />
+    <configuration name="ConfigserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eazybytes.configserver.ConfigserverApplication" />
+      <module name="configserver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.eazybytes.cards.*" />
+          <option name="PATTERN" value="com.eazybytes.configserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoansApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.eazybytes.loans.LoansApplication" />
-      <module name="loans" />
+    <configuration name="MessageApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.iatulb.message.MessageApplication" />
+      <module name="message" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.eazybytes.loans.*" />
+          <option name="PATTERN" value="com.iatulb.message.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,19 +167,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.ConfigserverApplication" />
+      <item itemvalue="Application.MessageApplication" />
       <item itemvalue="Application.AccountsApplication" />
-      <item itemvalue="Application.CardsApplication" />
       <item itemvalue="Application.EurekaserverApplication" />
       <item itemvalue="Application.GatewayserverApplication" />
-      <item itemvalue="Application.LoansApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GatewayserverApplication" />
-        <item itemvalue="Application.LoansApplication" />
-        <item itemvalue="Application.CardsApplication" />
+        <item itemvalue="Application.MessageApplication" />
         <item itemvalue="Application.AccountsApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
+        <item itemvalue="Application.ConfigserverApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -188,14 +190,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753609315918</updated>
-    </task>
-    <task id="LOCAL-00005" summary="config server impl with git config">
-      <option name="closed" value="true" />
-      <created>1753612536166</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1753612536166</updated>
     </task>
     <task id="LOCAL-00006" summary="encrypting email">
       <option name="closed" value="true" />
@@ -581,7 +575,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757651124916</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="authorization using oauth using keyclock">
+      <option name="closed" value="true" />
+      <created>1757694062383</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1757694062384</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
