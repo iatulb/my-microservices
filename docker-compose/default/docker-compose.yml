@@ -1,4 +1,5 @@
 services:
+
   keycloak:
     image: quay.io/keycloak/keycloak:26.3.3
     container_name: keycloak
@@ -242,7 +243,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "iatulb/configserver:s13"
+    image: "iatulb/configserver:s14"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -262,7 +263,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "iatulb/eurekaserver:s13"
+    image: "iatulb/eurekaserver:s14"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -282,21 +283,42 @@ services:
       SPRING_APPLICATION_NAME: "eurekaserver"
       OTEL_SERVICE_NAME: "eurekaserver"
 
-  rabbit:
-    image: rabbitmq:4-management
-    container_name: rabbitmq
+  kafka:
+    image: docker.io/bitnami/kafka:3.9
     ports:
-      - "5672:5672"
-      - "15672:15672"
-    healthcheck:
-      test: rabbitmq-diagnostics check_port_connectivity
-      interval: 20s
-      timeout: 20s
-      retries: 10
-      start_period: 20s
+      - "9092:9092"
+    volumes:
+      - "kafka_data:/bitnami"
+    environment:
+      # KRaft settings
+      - KAFKA_CFG_NODE_ID=0
+      - KAFKA_CFG_PROCESS_ROLES=controller,broker
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=0@kafka:9093
+      # Listeners
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT
     extends:
       file: common-config.yml
       service: network-deploy-service
+
+#  rabbit:
+#    image: rabbitmq:4-management
+#    container_name: rabbitmq
+#    ports:
+#      - "5672:5672"
+#      - "15672:15672"
+#    healthcheck:
+#      test: rabbitmq-diagnostics check_port_connectivity
+#      interval: 20s
+#      timeout: 20s
+#      retries: 10
+#      start_period: 20s
+#    extends:
+#      file: common-config.yml
+#      service: network-deploy-service
 
 #  accountsdb:
 #    container_name: accountsdb
@@ -309,7 +331,7 @@ services:
 #      service: microservice-db-config
 
   accounts:
-    image: "iatulb/accounts:s13"
+    image: "iatulb/accounts:s14"
     container_name: accounts-ms
 #    ports:
 #      - "8080:8080"
@@ -318,12 +340,13 @@ services:
         condition: service_healthy
       eurekaserver:
         condition: service_healthy
-      rabbit:
-        condition: service_healthy
+#      kafka:
+#        condition: service_healthy
     environment:
       SPRING_APPLICATION_NAME: "accounts"
       OTEL_SERVICE_NAME: "accounts"
-      SPRING_RABBITMQ_HOST: "rabbit"
+      SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
+#      SPRING_RABBITMQ_HOST: "rabbit"
 #      SPRING_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
     healthcheck:
       test: "curl --fail --silent localhost:8080/actuator/health | grep  'UP' || exit 1"
@@ -364,7 +387,7 @@ services:
 
 
   cards:
-    image: "iatulb/cards:s13"
+    image: "iatulb/cards:s14"
     container_name: cards-ms
 #    ports:
 #      - "9000:9000"
@@ -416,7 +439,7 @@ services:
 
 
   loans:
-    image: "iatulb/loans:s13"
+    image: "iatulb/loans:s14"
     container_name: loans-ms
 #    ports:
 #      - "8090:8090"
@@ -452,19 +475,20 @@ services:
       service: microservice-eureka-config
 
   message:
-    image: "iatulb/message:s13"
+    image: "iatulb/message:s14"
     container_name: message-ms
-    depends_on:
-      rabbit:
-        condition: service_healthy
+#    depends_on:
+#      kafka:
+#        condition: service_healthy
     environment:
-      SPRING_RABBITMQ_HOST: "rabbit"
+#      SPRING_RABBITMQ_HOST: "rabbit"
+      SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
     extends:
       file: common-config.yml
       service: network-deploy-service
 
   gatewayserver:
-    image: "iatulb/gatewayserver:s13"
+    image: "iatulb/gatewayserver:s14"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
@@ -504,7 +528,9 @@ services:
 
 # default/docker-compose.yml
 
-
+volumes:
+  kafka_data:
+    driver: local
 
 networks:
   mynetwork:
