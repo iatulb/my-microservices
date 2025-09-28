@@ -1,0 +1,36 @@
+#deploying the service on K8S
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: configserver-deployment
+  labels:
+    app: configserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: configserver
+  template:
+    metadata:
+      labels:
+        app: configserver
+    spec:
+      containers:
+        - name: configserver
+          image: docker.io/iatulb/configserver:s14
+          ports:
+            - containerPort: 8071
+---
+#exposing service to external world as service
+apiVersion: v1
+kind: Service
+metadata:
+  name: configserver
+spec:
+  selector:
+    app: configserver
+  type: LoadBalancer #
+  ports:
+    - protocol: TCP
+      port: 8071 #port of external world
+      targetPort: 8071 #container port
