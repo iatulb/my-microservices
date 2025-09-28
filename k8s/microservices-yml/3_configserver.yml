@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: configserver
-          image: docker.io/iatulb/configserver:s14
+          image: docker.io/iatulb/configserver:s12
           ports:
             - containerPort: 8071
 ---
