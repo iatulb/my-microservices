@@ -1,0 +1,27 @@
+dependencies:
+- name: iatulb-common
+  repository: file://../../iatulb-common
+  version: 0.1.0
+- name: configserver
+  repository: file://../../iatulb-services/configserver
+  version: 0.1.0
+- name: eurekaserver
+  repository: file://../../iatulb-services/eurekaserver
+  version: 0.1.0
+- name: accounts
+  repository: file://../../iatulb-services/accounts
+  version: 0.1.0
+- name: cards
+  repository: file://../../iatulb-services/cards
+  version: 0.1.0
+- name: loans
+  repository: file://../../iatulb-services/loans
+  version: 0.1.0
+- name: gatewayserver
+  repository: file://../../iatulb-services/gatewayserver
+  version: 0.1.0
+- name: message
+  repository: file://../../iatulb-services/message
+  version: 0.1.0
+digest: sha256:6aa5a12622c81f4f869f80dd4d703bf409ff935e14dbfd05f14085a63a9e4d56
+generated: "2025-10-01T22:33:57.272666+05:30"
