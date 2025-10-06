@@ -196,22 +196,6 @@
       <option name="presentableId" value="Default" />
       <updated>1753609315918</updated>
     </task>
-    <task id="LOCAL-00012" summary="docker images with config">
-      <option name="closed" value="true" />
-      <created>1754238733518</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1754238733518</updated>
-    </task>
-    <task id="LOCAL-00013" summary="docker compose for 3 services and 3 DBs">
-      <option name="closed" value="true" />
-      <created>1754550338648</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1754550338648</updated>
-    </task>
     <task id="LOCAL-00014" summary="docker compose for 3 services and 3 DBs">
       <option name="closed" value="true" />
       <created>1754550500425</created>
@@ -588,7 +572,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759070264887</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="helm manifest files">
+      <option name="closed" value="true" />
+      <created>1759743999951</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1759743999951</updated>
+    </task>
+    <task id="LOCAL-00062" summary="helm manifest files">
+      <option name="closed" value="true" />
+      <created>1759744038514</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1759744038514</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="config server impl" />
     <MESSAGE value="config server impl with file config" />
     <MESSAGE value="config server impl with git config" />
     <MESSAGE value="encrypting email" />
@@ -628,6 +627,7 @@
     <MESSAGE value="event driven using rabbitmq" />
     <MESSAGE value="event driven using kafka" />
     <MESSAGE value="k8s manifest files" />
-    <option name="LAST_COMMIT_MESSAGE" value="k8s manifest files" />
+    <MESSAGE value="helm manifest files" />
+    <option name="LAST_COMMIT_MESSAGE" value="helm manifest files" />
   </component>
 </project>

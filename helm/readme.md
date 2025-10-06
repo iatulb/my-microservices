@@ -55,3 +55,7 @@ helm uninstall kafka
 kubectl delete -n default --now persistentvolumeclaim data-kafka-controller-0 --cascade=background
 helm uninstall keycloak
 kubectl delete -n default --now persistentvolumeclaim data-keycloak-postgresql-0 --cascade=background
+
+
+#Rollback to revision
+helm rollback atulbank 1
