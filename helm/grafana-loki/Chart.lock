@@ -1,0 +1,21 @@
+dependencies:
+- name: grafana-alloy
+  repository: file://../grafana-alloy
+  version: 1.0.8
+- name: memcached
+  repository: file://../memcached
+  version: 8.0.0
+- name: memcached
+  repository: file://../memcached
+  version: 8.0.0
+- name: memcached
+  repository: file://../memcached
+  version: 8.0.0
+- name: memcached
+  repository: file://../memcached
+  version: 8.0.0
+- name: common
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 2.31.4
+digest: sha256:3cb12eca8f23bcbb0f46d7cf6dab2da5696e623ce3e4dd6f7b1a0a5ea37bde16
+generated: "2025-10-03T18:28:45.5691633+05:30"
