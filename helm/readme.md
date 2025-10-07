@@ -33,14 +33,20 @@ helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dash
 #keycloak
 #In helm folder
 helm install keycloak keycloak
+TIMEOUT /T 120
 helm install kafka kafka
+TIMEOUT /T 120
 helm install prometheus kube-prometheus
+TIMEOUT /T 120
 helm install loki grafana-loki
+TIMEOUT /T 120
 helm install tempo grafana-tempo
+TIMEOUT /T 120
 helm install grafana grafana
+TIMEOUT /T 120
 helm install atulbank env/dev-env
 
-
+try with new helm, bitnami is not working for tempo/loki tracing
 
 #uninstall services
 helm uninstall atulbank
@@ -59,3 +65,11 @@ kubectl delete -n default --now persistentvolumeclaim data-keycloak-postgresql-0
 
 #Rollback to revision
 helm rollback atulbank 1
+
+
+
+[//]: # (kubectl scale statefulset tempo-grafana-tempo-ingester --replicas=0)
+
+[//]: # (kubectl delete pvc data-tempo-grafana-tempo-ingester-0)
+
+[//]: # (kubectl scale statefulset tempo-grafana-tempo-ingester --replicas=1)
