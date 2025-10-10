@@ -196,38 +196,6 @@
       <option name="presentableId" value="Default" />
       <updated>1753609315918</updated>
     </task>
-    <task id="LOCAL-00015" summary="docker compose for 3 services and 3 DBs">
-      <option name="closed" value="true" />
-      <created>1754553746344</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1754553746344</updated>
-    </task>
-    <task id="LOCAL-00016" summary="docker compose for 3 services and 3 DBs">
-      <option name="closed" value="true" />
-      <created>1754745237331</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1754745237331</updated>
-    </task>
-    <task id="LOCAL-00017" summary="eureka server properties">
-      <option name="closed" value="true" />
-      <created>1754747117452</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1754747117452</updated>
-    </task>
-    <task id="LOCAL-00018" summary="eureka server properties">
-      <option name="closed" value="true" />
-      <created>1754747122975</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1754747122975</updated>
-    </task>
     <task id="LOCAL-00019" summary="eureka server for all 3">
       <option name="closed" value="true" />
       <created>1754760639892</created>
@@ -588,7 +556,39 @@
       <option name="project" value="LOCAL" />
       <updated>1759746292767</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="helm manifest files">
+      <option name="closed" value="true" />
+      <created>1759854806870</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1759854806871</updated>
+    </task>
+    <task id="LOCAL-00065" summary="helm manifest files">
+      <option name="closed" value="true" />
+      <created>1759855071931</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1759855071931</updated>
+    </task>
+    <task id="LOCAL-00066" summary="helm manifest files">
+      <option name="closed" value="true" />
+      <created>1759855111933</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1759855111933</updated>
+    </task>
+    <task id="LOCAL-00067" summary="helm manifest files">
+      <option name="closed" value="true" />
+      <created>1760103208987</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1760103208987</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -31,7 +31,7 @@ kubectl -n default port-forward svc/kubernetes-dashboard-kong-proxy 8443:443
 #Start kubernetes dashboard
 helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard
 #keycloak
-#In helm folder
+#In helm-new folder
 helm install keycloak keycloak
 TIMEOUT /T 120
 helm install kafka kafka
@@ -42,20 +42,24 @@ helm install loki grafana-loki
 TIMEOUT /T 120
 helm install tempo grafana-tempo
 TIMEOUT /T 120
+helm install alloy grafana-alloy
 helm install grafana grafana
 TIMEOUT /T 120
 helm install atulbank env/dev-env
 
 try with new helm, bitnami is not working for tempo/loki tracing
 
-#uninstall services
+#uninstall services, make sure all PVC are deleted while uninstalling helm charts
 helm uninstall atulbank
 helm uninstall grafana
+helm uninstall alloy
 helm uninstall tempo
-kubectl delete -n default --now persistentvolumeclaim data-tempo-grafana-tempo-ingester-0 --cascade=background
+kubectl delete -n default --now persistentvolumeclaim storage-tempo-0 --cascade=background
 helm uninstall loki
-kubectl delete -n default --now persistentvolumeclaim data-loki-grafana-loki-querier-0 --cascade=background
-kubectl delete -n default --now persistentvolumeclaim data-loki-grafana-loki-ingester-0 --cascade=background
+kubectl delete -n default --now persistentvolumeclaim data-loki-backend-0 --cascade=background
+kubectl delete -n default --now persistentvolumeclaim data-loki-write-0 --cascade=background
+kubectl delete -n default --now persistentvolumeclaim export-0-loki-minio-0 --cascade=background
+kubectl delete -n default --now persistentvolumeclaim export-1-loki-minio-0 --cascade=background
 helm uninstall prometheus
 helm uninstall kafka
 kubectl delete -n default --now persistentvolumeclaim data-kafka-controller-0 --cascade=background
