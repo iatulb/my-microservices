@@ -60,7 +60,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-kubernetes-discoveryclient</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>io.micrometer</groupId>
@@ -115,7 +115,7 @@
 				<version>3.4.2</version>
 				<configuration>
 					<to>
-						<image>iatulb/${project.artifactId}:s14</image>
+						<image>iatulb/${project.artifactId}:s17</image>
 					</to>
 				</configuration>
 			</plugin>

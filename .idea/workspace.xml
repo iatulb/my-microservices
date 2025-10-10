@@ -99,7 +99,7 @@
       <recent name="com.eazybytes.accounts.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GatewayserverApplication">
+  <component name="RunManager" selected="Application.AccountsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.eazybytes.accounts.AccountsApplication" />
       <module name="accounts" />
@@ -180,9 +180,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AccountsApplication" />
         <item itemvalue="Application.GatewayserverApplication" />
         <item itemvalue="Application.MessageApplication" />
-        <item itemvalue="Application.AccountsApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
         <item itemvalue="Application.ConfigserverApplication" />
       </list>
@@ -195,14 +195,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753609315918</updated>
-    </task>
-    <task id="LOCAL-00019" summary="eureka server for all 3">
-      <option name="closed" value="true" />
-      <created>1754760639892</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1754760639892</updated>
     </task>
     <task id="LOCAL-00020" summary="eureka server for all 3">
       <option name="closed" value="true" />
@@ -588,7 +580,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760103208987</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="helm manifest files">
+      <option name="closed" value="true" />
+      <created>1760103223831</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1760103223831</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="config server impl with file config" />
     <MESSAGE value="config server impl with git config" />
     <MESSAGE value="encrypting email" />
     <MESSAGE value="refresh config without restarting" />
@@ -628,6 +627,7 @@
     <MESSAGE value="event driven using kafka" />
     <MESSAGE value="k8s manifest files" />
     <MESSAGE value="helm manifest files" />
-    <option name="LAST_COMMIT_MESSAGE" value="helm manifest files" />
+    <MESSAGE value="with server side discovery" />
+    <option name="LAST_COMMIT_MESSAGE" value="with server side discovery" />
   </component>
 </project>

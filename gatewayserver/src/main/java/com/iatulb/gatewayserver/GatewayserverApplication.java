@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.circuitbreaker.resilience4j.ReactiveResilience4JCircuitBreakerFactory;
 import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JConfigBuilder;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.gateway.filter.ratelimit.KeyResolver;
 import org.springframework.cloud.gateway.filter.ratelimit.RedisRateLimiter;
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -20,6 +21,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class GatewayserverApplication {
 
 	public static void main(String[] args) {
@@ -37,7 +39,7 @@ public class GatewayserverApplication {
 										.setFallbackUri("forward:/contactSupport")
 								)
 						)
-						.uri("lb://ACCOUNTS")
+						.uri("http://accounts:8080")
 				)
 				.route(p -> p
 						.path("/iatulb/loans/**")
@@ -49,7 +51,7 @@ public class GatewayserverApplication {
 								)
 
 						)
-						.uri("lb://LOANS")
+						.uri("http://loans:8090")
 				)
 				.route(p -> p
 						.path("/iatulb/cards/**")
@@ -60,7 +62,7 @@ public class GatewayserverApplication {
 										.setKeyResolver(userKeyResolver())
 								)
 						)
-						.uri("lb://CARDS")
+						.uri("http://cards:9000")
 				)
 				.build();
 	}
