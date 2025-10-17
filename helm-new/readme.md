@@ -74,8 +74,6 @@ helm rollback atulbank 1
 
 
 
-[//]: # (kubectl scale statefulset tempo-grafana-tempo-ingester --replicas=0)
+gcloud container clusters get-credentials cost-optimized-cluster-1 --location=us-central1-c
 
-[//]: # (kubectl delete pvc data-tempo-grafana-tempo-ingester-0)
 
-[//]: # (kubectl scale statefulset tempo-grafana-tempo-ingester --replicas=1)
