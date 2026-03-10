@@ -38,6 +38,14 @@
     &quot;accountId&quot;: &quot;6a90b7fc-1ef4-4e57-99e9-104d54e92b97&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -51,37 +59,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GatewayserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MessageApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.default.configserver: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.default.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/work_dsi/Projects/Learning/my-microservices/helm-new&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/work_dsi/Projects/Learning/my-microservices/atul-bom/src/main/java/com/atulbank/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccountsApplication.executor": "Run",
+    "Application.CardsApplication.executor": "Run",
+    "Application.ConfigserverApplication.executor": "Run",
+    "Application.EurekaserverApplication.executor": "Run",
+    "Application.GatewayserverApplication.executor": "Run",
+    "Application.LoansApplication.executor": "Run",
+    "Application.MessageApplication.executor": "Run",
+    "Docker.default.configserver: Compose Deployment.executor": "Run",
+    "Docker.default.redis: Compose Deployment.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/work_dsi/Projects/Learning/my-microservices/helm-new",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/work_dsi/Projects/Learning/my-microservices/atul-bom/src/main/java/com/atulbank/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work_dsi\Projects\Learning\my-microservices\helm-new" />
@@ -189,6 +207,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9daefe1f-4e51-4851-8430-dd772b5ace61" name="Changes" comment="" />
@@ -196,22 +222,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753609315918</updated>
-    </task>
-    <task id="LOCAL-00024" summary="eureka server for all 3">
-      <option name="closed" value="true" />
-      <created>1754843105499</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1754843105499</updated>
-    </task>
-    <task id="LOCAL-00025" summary="gateway server">
-      <option name="closed" value="true" />
-      <created>1754931426863</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1754931426863</updated>
+      <workItem from="1770825508449" duration="81000" />
+      <workItem from="1773123187090" duration="13474000" />
     </task>
     <task id="LOCAL-00026" summary="gateway server">
       <option name="closed" value="true" />
@@ -589,8 +601,27 @@
       <option name="project" value="LOCAL" />
       <updated>1760375459551</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="parent pom/bom file">
+      <option name="closed" value="true" />
+      <created>1760699081443</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1760699081444</updated>
+    </task>
+    <task id="LOCAL-00074" summary="parent pom/bom file">
+      <option name="closed" value="true" />
+      <created>1760699088649</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1760699088649</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -604,7 +635,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="config server impl with git config" />
     <MESSAGE value="encrypting email" />
     <MESSAGE value="refresh config without restarting" />
     <MESSAGE value="refresh config without restarting using rabbitmq" />
@@ -629,7 +659,8 @@
     <MESSAGE value="k8s manifest files" />
     <MESSAGE value="helm manifest files" />
     <MESSAGE value="with server side discovery" />
-    <option name="LAST_COMMIT_MESSAGE" value="with server side discovery" />
+    <MESSAGE value="parent pom/bom file" />
+    <option name="LAST_COMMIT_MESSAGE" value="parent pom/bom file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
