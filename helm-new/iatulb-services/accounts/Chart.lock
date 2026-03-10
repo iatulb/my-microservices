@@ -1,6 +1,0 @@
-dependencies:
-- name: iatulb-common
-  repository: file://../../iatulb-common
-  version: 0.1.0
-digest: sha256:1f18d3b8cc4d467c2c0531f34ae71a275a404d7b5d72bb3082b648b5dbb5612a
-generated: "2025-09-30T22:17:09.5355231+05:30"
