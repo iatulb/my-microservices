@@ -223,31 +223,7 @@
       <option name="presentableId" value="Default" />
       <updated>1753609315918</updated>
       <workItem from="1770825508449" duration="81000" />
-      <workItem from="1773123187090" duration="13474000" />
-    </task>
-    <task id="LOCAL-00026" summary="gateway server">
-      <option name="closed" value="true" />
-      <created>1754931432594</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1754931432594</updated>
-    </task>
-    <task id="LOCAL-00027" summary="gateway server">
-      <option name="closed" value="true" />
-      <created>1754931467849</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1754931467849</updated>
-    </task>
-    <task id="LOCAL-00028" summary="gateway server">
-      <option name="closed" value="true" />
-      <created>1755242104854</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1755242104854</updated>
+      <workItem from="1773123187090" duration="14859000" />
     </task>
     <task id="LOCAL-00029" summary="request filter in gateway server">
       <option name="closed" value="true" />
@@ -617,7 +593,31 @@
       <option name="project" value="LOCAL" />
       <updated>1760699088649</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="parent pom/bom file">
+      <option name="closed" value="true" />
+      <created>1773159724160</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1773159724162</updated>
+    </task>
+    <task id="LOCAL-00076" summary="parent pom/bom file">
+      <option name="closed" value="true" />
+      <created>1773159733867</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1773159733867</updated>
+    </task>
+    <task id="LOCAL-00077" summary="parent pom/bom file">
+      <option name="closed" value="true" />
+      <created>1773159751981</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1773159751981</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

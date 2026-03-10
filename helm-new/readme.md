@@ -57,6 +57,10 @@ kubectl --namespace kube-system port-forward svc/my-headlamp 8074:80
 kubectl create token my-headlamp --namespace kube-system
 
 
+# create docker image
+# in account project
+mvn compile jib:dockerBuild
+
 # keycloak
 # In helm-new folder
 helm install keycloak keycloak
