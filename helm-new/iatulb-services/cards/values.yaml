@@ -10,7 +10,7 @@ replicaCount: 1
 
 image:
   repository: iatulb/cards
-  tag: s17
+  tag: s20
 
 containerPort: 9000
 

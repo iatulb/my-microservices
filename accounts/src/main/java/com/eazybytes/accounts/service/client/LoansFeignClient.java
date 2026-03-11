@@ -12,5 +12,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface LoansFeignClient {
     // Add Feign client methods for Cards service here
     @GetMapping(value = "/api/fetch", consumes = "application/json")
-    public ResponseEntity<LoansDto> fetchLoanDetails(@RequestHeader("iatulb-correlation-id") String correlationId, @RequestParam String mobileNumber);
+    public ResponseEntity<LoansDto> fetchLoanDetails(@RequestHeader("iatulb-correlation-id") String correlationId, @RequestParam("mobileNumber") String mobileNumber);
 }

@@ -10,7 +10,7 @@ replicaCount: 1
 
 image:
   repository: iatulb/configserver
-  tag: s17
+  tag: s20
 
 containerPort: 8071
 
