@@ -50,11 +50,11 @@ helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dash
 
 # Start headlamp dashboard
 helm repo add headlamp https://kubernetes-sigs.github.io/headlamp/
-helm install my-headlamp headlamp/headlamp --namespace kube-system
-kubectl --namespace kube-system port-forward svc/my-headlamp 8074:80
+helm install my-headlamp headlamp/headlamp 
+kubectl  port-forward svc/my-headlamp 8074:80
 
 # token generator
-kubectl create token my-headlamp --namespace kube-system
+kubectl create token my-headlamp 
 
 
 # create docker image
