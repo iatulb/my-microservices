@@ -1693,7 +1693,7 @@ service:
 externalAccess:
   ## @param externalAccess.enabled Enable Kubernetes external cluster access to Kafka brokers
   ##
-  enabled: false
+  enabled: true
   ## Service settings
   controller:
     ## @param externalAccess.controller.forceExpose If set to true, force exposing controller-eligible nodes although they are configured as controller-only nodes
@@ -1709,7 +1709,7 @@ externalAccess:
       ## @param externalAccess.controller.service.ports.external Kafka port used for external access when service type is LoadBalancer
       ##
       ports:
-        external: 9094
+        external: 9092
       ## @param externalAccess.controller.service.loadBalancerClass Kubernetes Service Load Balancer class for external access when service type is LoadBalancer
       ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#load-balancer-class
       ##
@@ -1727,7 +1727,7 @@ externalAccess:
       ##   - broker1.external.example.com
       ##   - broker2.external.example.com
       ##
-      loadBalancerNames: []
+      loadBalancerNames: ["localhost"]
       ## @param externalAccess.controller.service.loadBalancerAnnotations Array of load balancer annotations for each Kafka broker. Length must be the same as replicaCount
       ## e.g:
       ## loadBalancerAnnotations:

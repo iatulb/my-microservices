@@ -238,7 +238,8 @@ public class AccountsController {
     }
 
     public AccountContactInfoDto getContactInfoFallback(Throwable throwable) {
-        accountContactInfoDto.setMessage("Fallback");
-        return accountContactInfoDto;
+        AccountContactInfoDto accountContactInfoDto1 = new AccountContactInfoDto();
+        accountContactInfoDto1.setMessage("fallback");
+        return accountContactInfoDto1;
     }
 }
