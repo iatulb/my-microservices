@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name="loans", url = "http://loans:8090", fallback = LoanFallback.class)
+@FeignClient(name="loans", url = "http://localhost:8090", fallback = LoanFallback.class)
 public interface LoansFeignClient {
     // Add Feign client methods for Cards service here
     @GetMapping(value = "/api/fetch", consumes = "application/json")

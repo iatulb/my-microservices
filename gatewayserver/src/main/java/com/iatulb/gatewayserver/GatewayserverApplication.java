@@ -39,7 +39,8 @@ public class GatewayserverApplication {
 										.setFallbackUri("forward:/contactSupport")
 								)
 						)
-						.uri("http://accounts:8080")
+						//for container/helm, use service name instead of localhost like accounts
+						.uri("http://localhost:8080")
 				)
 				.route(p -> p
 						.path("/iatulb/loans/**")
@@ -51,7 +52,7 @@ public class GatewayserverApplication {
 								)
 
 						)
-						.uri("http://loans:8090")
+						.uri("http://localhost:8090")
 				)
 				.route(p -> p
 						.path("/iatulb/cards/**")
@@ -62,7 +63,7 @@ public class GatewayserverApplication {
 										.setKeyResolver(userKeyResolver())
 								)
 						)
-						.uri("http://cards:9000")
+						.uri("http://localhost:9000")
 				)
 				.build();
 	}

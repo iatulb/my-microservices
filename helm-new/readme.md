@@ -50,6 +50,7 @@ helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dash
 
 # Start headlamp dashboard
 helm repo add headlamp https://kubernetes-sigs.github.io/headlamp/
+helm repo update
 helm install my-headlamp headlamp/headlamp 
 kubectl  port-forward svc/my-headlamp 8074:80
 
@@ -85,7 +86,7 @@ TIMEOUT /T 120
 helm install atulbank env/dev-env
 
 try with new helm, bitnami is not working for tempo/loki tracing
-
+l
 # uninstall services
 helm uninstall atulbank
 helm uninstall grafana

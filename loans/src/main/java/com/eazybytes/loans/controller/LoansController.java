@@ -65,7 +65,7 @@ public class LoansController {
     }
     )
     @PostMapping("/create")
-    public ResponseEntity<ResponseDto> createLoan(@RequestParam
+    public ResponseEntity<ResponseDto> createLoan(@RequestParam("mobileNumber")
                                                       @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
                                                       String mobileNumber) {
         iLoansService.createLoan(mobileNumber);
@@ -95,7 +95,7 @@ public class LoansController {
     @GetMapping("/fetch")
     public ResponseEntity<LoansDto> fetchLoanDetails(
             @RequestHeader("iatulb-correlation-id") String correlationId,
-            @RequestParam
+            @RequestParam("mobileNumber")
                                                                @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
                                                                String mobileNumber) {
         log.debug("fetchLoanDetails start");

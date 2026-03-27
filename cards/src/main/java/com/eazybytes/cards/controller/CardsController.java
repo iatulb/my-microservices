@@ -65,7 +65,7 @@ public class CardsController {
     }
     )
     @PostMapping("/create")
-    public ResponseEntity<ResponseDto> createCard(@Valid @RequestParam
+    public ResponseEntity<ResponseDto> createCard(@Valid @RequestParam("mobileNumber")
                                                       @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
                                                       String mobileNumber) {
         iCardsService.createCard(mobileNumber);
@@ -94,7 +94,7 @@ public class CardsController {
     @GetMapping("/fetch")
     public ResponseEntity<CardsDto> fetchCardDetails(
             @RequestHeader("iatulb-correlation-id") String correlationId,
-            @RequestParam
+            @RequestParam("mobileNumber")
            @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
            String mobileNumber) {
         log.debug("fetchCardDetails start");
